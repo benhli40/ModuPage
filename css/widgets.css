@@ -1,0 +1,32 @@
+/* widgets.css - Common widget styles for ModuPage */
+
+.widget {
+  background: var(--widget-bg);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.widget h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.widget .remove-btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.widget .remove-btn:hover {
+  color: red;
+}

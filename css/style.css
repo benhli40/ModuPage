@@ -1,0 +1,78 @@
+/* style.css - Main layout for ModuPage */
+
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #222;
+  --accent: #0077ff;
+  --widget-bg: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--accent);
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+header button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main#dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#widget-picker {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--widget-bg);
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+#widget-picker.hidden {
+  display: none;
+}
+
+#widget-picker ul {
+  list-style: none;
+  padding: 0;
+}
+
+#widget-picker li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+#widget-picker li:hover {
+  background: #f0f0f0;
+}

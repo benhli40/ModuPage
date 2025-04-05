@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModuPage</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/widgets.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+</head>
+<body>
+  <header>
+    <h1>ModuPage</h1>
+    <button id="add-widget">+ Add Widget</button>
+    <button id="toggle-theme">🌓</button>
+  </header>
+
+  <main id="dashboard">
+    <!-- Widgets will be dynamically inserted here -->
+  </main>
+
+  <div id="widget-picker" class="hidden">
+    <h2>Select a Widget</h2>
+    <ul>
+      <li data-widget="clock">🕒 Clock</li>
+      <li data-widget="todo">✅ To-Do</li>
+      <li data-widget="quote">📜 Quote</li>
+      <li data-widget="bookmarks">🔗 Bookmarks</li>
+      <li data-widget="weather">☁️ Weather</li>
+    </ul>
+    <button id="close-picker">Close</button>
+  </div>
+
+  <script type="module" src="js/modupage.js"></script>
+</body>
+</html>

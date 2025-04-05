@@ -1,0 +1,29 @@
+/* themes.css - Theme variants for ModuPage */
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #eee;
+  --accent: #00b7ff;
+  --widget-bg: #2c2c2c;
+}
+
+body.calm {
+  --bg-color: #e7f2f0;
+  --text-color: #304c46;
+  --accent: #4aa89a;
+  --widget-bg: #ffffff;
+}
+
+body.focused {
+  --bg-color: #fdf6e3;
+  --text-color: #333;
+  --accent: #e67e22;
+  --widget-bg: #fffaf3;
+}
+
+body.stormy {
+  --bg-color: #2d2f36;
+  --text-color: #d4d4dc;
+  --accent: #ff4e6a;
+  --widget-bg: #3a3c45;
+}
